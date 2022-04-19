@@ -1,0 +1,94 @@
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.prasenjit{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(#a6d8ff,#fff,#fff);
+}
+.sun{
+    position: absolute;
+    top:100px;
+    left: 55%;
+    width:100px;
+    height: 100px;
+    background-color: azure;
+    border-radius: 50%;
+}.bground{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+  background-image: url("/Road/static/images/bg.png.css.png");
+    background-size: 1500px;
+    background-repeat: repeat-x;
+    animation: I 25s linear infinite;
+}@keyframes I{
+    0%{
+        background-position-x:0px;
+    }100%{
+        background-position-x: -1500px;
+    }
+}
+.police{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    max-width: 200px;
+    z-index: 10;
+    animation: F 18s linear infinite;
+}
+@keyframes F{
+    0%{
+        transform: translateX(0px) rotateY(180deg);
+    }
+    90%,100%{
+        transform: translateX(calc(100vw + 200px)) rotateY(180deg);
+    }
+}.supercar{
+    position: absolute;
+    bottom: 50px;
+    right:-0px;
+    max-width: 200px;
+    animation: you 12s linear infinite;
+}@keyframes you{
+    0%{
+        transform: translateX(0px) rotateY(180deg);
+    }
+    90%,100%{
+        transform: translateX(calc(-100vw - 200px)) rotateY(180deg);
+    }} .smartcar2
+    { position: absolute;
+        left:0;
+        bottom: 70px;
+        max-width: 230px;
+        z-index: 9;
+        animation: Fd 19s linear infinite;
+    }
+    @keyframes Fd{
+        0%{
+            transform: translateX(0px);
+        }
+        90%,100%{
+            transform: translateX(calc(200vw + 200px));
+        }
+
+    }.ather{
+            position: absolute;
+            bottom: -60px;
+            right:-100px;
+            max-width: 200px;
+            z-index: 1;
+            animation: too 10s linear infinite;
+        }@keyframes too{
+            0%{
+                transform: translateX(0px) rotateY(180deg);
+            }
+            90%,100%{
+                transform: translateX(calc(-100vw - 250px)) rotatey(180deg);
+    }}
